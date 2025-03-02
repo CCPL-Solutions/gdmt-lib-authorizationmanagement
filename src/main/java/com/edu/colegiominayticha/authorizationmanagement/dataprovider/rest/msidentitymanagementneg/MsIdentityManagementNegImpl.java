@@ -36,6 +36,8 @@ public class MsIdentityManagementNegImpl implements MsIdentityManagementNeg {
                             msIdentityManagementProperties.getFindAllGroups())
                     .queryParam("username", username);
 
+            log.info("[GDMT_START] [findAllGroups] uriBuilder [{}]", uriBuilder.toUriString());
+
             var responseEntity = gdmtRestTemplate.getForEntity(uriBuilder.toUriString(), GroupDto[].class);
             var response = List.of(Objects.requireNonNull(responseEntity.getBody()));
 
