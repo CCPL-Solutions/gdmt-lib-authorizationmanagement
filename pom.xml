@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>com.edu.colegiominayticha</groupId>
-    <artifactId>gdmt-lib-accesscontrol</artifactId>
+    <artifactId>gdmt-lib-authorizationmanagement</artifactId>
     <version>1.0.0</version>
-    <name>gdmt-lib-accesscontrol</name>
-    <description>gdmt-lib-accesscontrol</description>
+    <name>gdmt-lib-authorizationmanagement</name>
+    <description>gdmt-lib-authorizationmanagement</description>
 
     <properties>
         <java.version>11</java.version>
@@ -24,7 +24,7 @@
         <sonar.java.source>11</sonar.java.source>
         <sonar.java.sources>./src/main/java</sonar.java.sources>
         <sonar.java.binaries>target/classes</sonar.java.binaries>
-        <sonar.projectKey>gdmt-lib-accesscontrol</sonar.projectKey>
+        <sonar.projectKey>gdmt-lib-authorizationmanagement</sonar.projectKey>
         <sonar.exclusions>
             **/*Application.*,
             **/*Api*.*,
@@ -87,6 +87,12 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-inline</artifactId>
+            <version>5.2.0</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
