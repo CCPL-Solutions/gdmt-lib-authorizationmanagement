@@ -1,7 +1,7 @@
 package com.edu.colegiominayticha.authorizationmanagement.service;
 
 import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.MsIdentityManagementNeg;
-import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.models.GroupDto;
+import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.model.GroupDto;
 import com.edu.colegiominayticha.gdmtlibcommons.exception.classification.security.ForbiddenException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

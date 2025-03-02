@@ -1,7 +1,7 @@
 package com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg;
 
-import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.models.FindAllPermissionsResponseDto;
-import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.models.GroupDto;
+import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.model.FindAllPermissionsResponseDto;
+import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.model.GroupDto;
 
 import java.util.List;
 import java.util.UUID;

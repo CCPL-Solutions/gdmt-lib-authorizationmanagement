@@ -1,8 +1,8 @@
 package com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg;
 
 import com.edu.colegiominayticha.authorizationmanagement.config.MsIdentityManagementPropertiesConfig;
-import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.models.FindAllPermissionsResponseDto;
-import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.models.GroupDto;
+import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.model.FindAllPermissionsResponseDto;
+import com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.model.GroupDto;
 import com.edu.colegiominayticha.gdmtlibcommons.exception.classification.technical.CommunicationException;
 import com.edu.colegiominayticha.gdmtlibcommons.service.GdmtRestTemplate;
 import lombok.RequiredArgsConstructor;

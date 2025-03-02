@@ -1,4 +1,4 @@
-package com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.models;
+package com.edu.colegiominayticha.authorizationmanagement.dataprovider.rest.msidentitymanagementneg.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
