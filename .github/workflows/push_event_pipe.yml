@@ -5,6 +5,10 @@ on:
     branches:
       - 'feature/*'
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   call-shared-workflow:
     uses: CCPL-Solutions/ccpl-devops/.github/workflows/push_event_workflow.yml@master
