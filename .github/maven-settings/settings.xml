@@ -29,8 +29,8 @@
   <servers>
     <server>
       <id>github</id>
-      <username>${{ github.actor }}</username>
-      <password>${{ secrets.GITHUB_TOKEN }}</password>
+      <username>${env.GITHUB_ACTOR_SETTINGS}</username>
+      <password>${env.GITHUB_TOKEN_SETTINGS}</password>
     </server>
   </servers>
 </settings>
