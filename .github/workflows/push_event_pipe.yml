@@ -8,7 +8,7 @@ on:
 permissions:
   contents: read
   actions: read
-  packages: write
+  packages: read
 
 jobs:
   call-shared-workflow:
