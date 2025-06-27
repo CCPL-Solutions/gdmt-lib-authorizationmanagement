@@ -15,3 +15,4 @@ jobs:
     uses: CCPL-Solutions/ccpl-devops/.github/workflows/push_event_workflow.yml@master
     secrets:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      TOKEN_EXAMPLE: ${{ secrets.TOKEN_EXAMPLE }}
