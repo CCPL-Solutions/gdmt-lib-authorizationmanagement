@@ -6,6 +6,10 @@ on:
       - 'feature/*'
       - 'fix/*'
 
+permissions:
+  contents: read
+  actions: read
+
 jobs:
   push-event-pipi:
     name: Feature/Hotfix CI
