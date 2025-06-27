@@ -1,19 +1,15 @@
-name: Push Event Pipe
+name: Feature/Hotfix CI
 
 on:
   push:
     branches:
       - 'feature/*'
-
-permissions:
-  contents: read
-  actions: read
-  packages: read
+      - 'fix/*'
 
 jobs:
   push-event-pipi:
-    name: PushEvenPipe
-    uses: CCPL-Solutions/ccpl-devops/.github/workflows/push_event_workflow.yml@master
+    name: Feature/Hotfix CI
+    uses: CCPL-Solutions/ccpl-devops/.github/workflows/feature_hotfix_push_workflow.yml@master
     secrets:
       USERNAME: ${{ secrets.USERNAME }}
       USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN }}
