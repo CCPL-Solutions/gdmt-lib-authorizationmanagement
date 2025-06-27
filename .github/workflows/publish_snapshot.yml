@@ -8,7 +8,7 @@ on:
 jobs:
   publish-snapshot:
     name: Publish Snapshot
-    uses: CCPL-Solutions/ccpl-devops/.github/workflows/publish_snapshot_workflow.yml@master
+    uses: CCPL-Solutions/ccpl-devops/.github/workflows/libs/publish_snapshot_workflow.yml@master
     secrets:
       USERNAME: ${{ secrets.USERNAME }}
       USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN }}
