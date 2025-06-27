@@ -173,4 +173,11 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/CCPL-Solutions/gdmt-lib-authorizationmanagement</url>
+        </repository>
+    </distributionManagement>
 </project>
