@@ -13,7 +13,7 @@ permissions:
 jobs:
   push-event-pipi:
     name: Feature/Hotfix CI
-    uses: CCPL-Solutions/ccpl-devops/.github/workflows/libs/feature_hotfix_push_workflow.yml@master
+    uses: CCPL-Solutions/ccpl-devops/.github/workflows/feature_hotfix_push_workflow.yml@master
     secrets:
       USERNAME: ${{ secrets.USERNAME }}
       USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN }}
