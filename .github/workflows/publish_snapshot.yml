@@ -16,5 +16,5 @@ jobs:
     uses: CCPL-Solutions/ccpl-devops/.github/workflows/publish_snapshot_workflow.yml@master
     secrets:
       USERNAME: ${{ secrets.USERNAME }}
-      USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN }}
+      USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN_PIBLISH }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
