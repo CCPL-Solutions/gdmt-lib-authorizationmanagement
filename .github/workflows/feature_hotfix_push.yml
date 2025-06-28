@@ -1,4 +1,4 @@
-name: Feature/Hotfix CI
+name: CI
 
 on:
   push:
@@ -12,9 +12,9 @@ permissions:
   actions: read
 
 jobs:
-  push-event-pipi:
-    name: Feature/Hotfix CI
-    uses: CCPL-Solutions/ccpl-devops/.github/workflows/feature_hotfix_push_workflow.yml@master
+  ci:
+    name: CI
+    uses: CCPL-Solutions/ccpl-devops/.github/workflows/ci_workflow.yml@master
     secrets:
       USERNAME: ${{ secrets.USERNAME }}
       USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN }}
