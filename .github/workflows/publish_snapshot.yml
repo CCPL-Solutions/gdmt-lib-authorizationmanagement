@@ -1,9 +1,13 @@
-name: Publish Snapshot from Develop
+name: Publish Artifact
 
 on:
-  push:
+  pull_request:
+    types:
+      - closed
     branches:
       - develop
+  push:
+    branches:
       - release/*
 
 permissions:
@@ -12,10 +16,13 @@ permissions:
   packages: write
       
 jobs:
-  publish-snapshot:
-    name: Publish Snapshot
-    uses: CCPL-Solutions/ccpl-devops/.github/workflows/publish_snapshot_workflow.yml@master
+  publish-artifact:
+    if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true && (startsWith(github.head_ref, 'feature/') || startsWith(github.head_ref, 'bugfix/') || startsWith(github.head_ref, 'hotfix/')))
+    name: Publish Artifact
+    uses: CCPL-Solutions/ccpl-devops/.github/workflows/publish_artifact_workflow.yml@master
     secrets:
       USERNAME: ${{ secrets.USERNAME }}
       USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN_PIBLISH }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+    with:
+      IS_SNAPSHOT: ${{ github.ref == 'refs/heads/develop' && github.event_name == 'pull_request' && github.event.pull_request.merged == true }}
