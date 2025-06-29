@@ -24,5 +24,3 @@ jobs:
       USERNAME: ${{ secrets.USERNAME }}
       USERNAME_ACCESS_TOKEN: ${{ secrets.USERNAME_ACCESS_TOKEN_PIBLISH }}
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
-    with:
-      IS_SNAPSHOT: ${{ github.ref == 'refs/heads/develop' && github.event_name == 'pull_request' && github.event.pull_request.merged == true }}
