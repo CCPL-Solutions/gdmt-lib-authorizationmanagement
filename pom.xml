@@ -13,11 +13,12 @@
 
     <groupId>com.edu.colegiominayticha</groupId>
     <artifactId>gdmt-lib-authorizationmanagement</artifactId>
-    <version>1.0.1</version>
+    <version>${revision}</version>
     <name>gdmt-lib-authorizationmanagement</name>
     <description>gdmt-lib-authorizationmanagement</description>
 
     <properties>
+        <revision>1.0.0</revision>
         <java.version>11</java.version>
         <spring-cloud.version>2021.0.9</spring-cloud.version>
         <!--Start Sonarqube properties-->
