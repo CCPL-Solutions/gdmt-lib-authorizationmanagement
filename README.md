@@ -82,7 +82,7 @@ Replace `<objectId>` with the object id for which the permission is being checke
 
 ## 3. Changelog
 
-### 1.0.0 - 2025-03-02
+### 1.0.0 - 29-06-2025
 
 - **Initial release:** Support for checking group permissions.
 
