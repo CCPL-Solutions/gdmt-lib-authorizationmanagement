@@ -51,7 +51,7 @@ public class AuthorizationManagerServiceImpl implements AuthorizationManagerServ
         }
 
         if (!hasPermission) {
-            throw new ForbiddenException("User does not have permission to perform this action");
+            throw new ForbiddenException("User does not have permission to perform this action.");
         }
     }
 
